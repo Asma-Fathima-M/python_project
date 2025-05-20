@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Edit Course</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label>Course Name</label>
+            <input type="text" name="name" value="{{ course[1] }}" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Description</label>
+            <textarea name="description" class="form-control">{{ course[2] }}</textarea>
+        </div>
+        <div class="mb-3">
+            <label>Credit Hours</label>
+            <input type="number" name="credits" value="{{ course[3] }}" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+</div>
+{% endblock %}

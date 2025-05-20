@@ -1,0 +1,12 @@
+body {
+    padding-top: 20px;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.table-actions {
+    white-space: nowrap;
+}
